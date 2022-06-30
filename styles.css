@@ -1,0 +1,119 @@
+body {
+    font-family: "Poppins";
+    background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    opacity: 1;
+}
+
+input, select, textarea, button {
+    font-family: "Poppins";
+}
+
+.container {
+    max-width: 720px;
+    margin: 3rem auto;
+}
+
+h1, p, label {
+    color: #fff;
+}
+
+#title {
+    font-weight: normal;
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 0;
+}
+
+#description {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 200;
+    text-align: center  ;
+    /* line-height: 1; */
+}
+
+form {
+    background: #1b1b32cc;
+    border-radius: 0.25rem;
+}
+
+#survey-form {
+    padding: 2.5rem;
+}
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+.form-group label {
+    padding-bottom: 5px;
+}
+
+.form-group input, select, textarea {
+    border-radius: 0.25rem;
+    height: 2.5rem;
+    padding: 6px 12px;
+    font-size: 15px;
+    color: dimgray;
+}
+
+.form-group textarea {
+    height: 10rem;
+}
+
+.submit-btn {
+    margin-top: 20px;
+}
+
+.submit-btn button {
+    background-color: #37af65;
+    width: 100%;
+    padding: 15px;
+    color: #ffff;
+    font-size: 16px;
+    border-radius: 0.25rem;
+}
+
+.form-checkbox div {
+    padding: 5px 0;
+}
+
+
+/* sm */
+
+@media (max-width: 425px) {
+    #title {
+        font-size: 25px;
+    }
+
+    #description {
+        font-size: 16px;
+        max-width: 80%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+}
+
+/* Tablet  */
+
+@media (max-width: 768px) {
+    .form-group span, .form-checkbox span {
+        font-size: 11px;
+    }
+}
+
+/* min-width lg screen */
+
+@media (min-width: 1024px) {
+    body {
+        font-size: 18px;
+    }
+
+    .form-group span, .form-checkbox span {
+        font-size: 14px;
+    }
+}
